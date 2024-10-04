@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="grey">#aaa</color>
+    <color name="darkGrey">#ff424242</color>
+    <color name="violet">#ac81e8</color>
+
+    <color name="bg_schedule_big">#eeeeee</color>
+
+    <!--Setting    -->
+    <color name="bg_setting_btn">@color/white</color>
+    <color name="bg_setting_text_btn">#000</color>
+
+    <!--ShowInformation_student    -->
+    <color name="bg_show_in4_">#ffffff</color>
+
+    <!--Home Item Search    -->
+    <color name="txt_color_card">#ff424242</color>
+    <color name="edt_text_color_search">#ff424242</color>
+
+    <!--Layout item    -->
+    <color name="bg_layout_item">#314DDA</color>
+    <color name="txt_time">#ff424242</color>
+    <color name="edt_color_pw">#fff</color>
+
+
+
+</resources>

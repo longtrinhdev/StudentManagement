@@ -1,0 +1,168 @@
+<resources>
+    <string name="app_name">Quản Lý Sinh Viên</string>
+    <!--  splash activity  -->
+    <string name="txt_splash">Quản Lý Sinh Viên</string>
+    <!--  login  -->
+    <string name="btn_login">Đăng nhập</string>
+    <string name="txt_forgot">Quên mật khẩu ?</string>
+    <!-- Thông báo-->
+    <string name="txt_notification_title">Đang tải...</string>
+    <!--  Home  -->
+    <string name="txt_notification_main">Thông báo gần đây</string>
+    <string name="txt_tien_ich">Tiện ích</string>
+    <string name="txt_danh_sach_hien_thi">Danh sách HS</string>
+    <string name="txt_tim_kiem">Tìm kiếm</string>
+    <string name="txt_xuat_file">Xuất file</string>
+    <string name="txt_xuat_ho_tro">Hỗ trợ kỹ thuật</string>
+    <string name="nav_home">Trang chủ</string>
+    <string name="nav_schedule">Lịch trình</string>
+    <string name="nav_setting">Cài đặt</string>
+    <string name="nav_account">Tài khoản</string>
+
+    <!-- Hiển thị danh sách sinh viên   -->
+    <string name="txt_show_list_title">Danh sách lớp học</string>
+    <string name="txt_increase_list">Danh sách tăng dần</string>
+    <string name="txt_decrease">Danh sách giảm dần</string>
+    <string name="txt_show_student_title">Thông tin cá nhân</string>
+    <string name="txt__show_born">Ngày sinh</string>
+    <string name="txt__show_sex">Giới tính</string>
+    <string name="txt__show_address">Địa chỉ</string>
+    <string name="txt__show_phone_number">Số điện thoại</string>
+    <string name="txt__show_title2">Kết quả học tập</string>
+    <string name="txt__show_math">Điểm Toán</string>
+    <string name="txt__show_literature">Điểm Văn</string>
+    <string name="txt__show_language">Ngoại Ngữ</string>
+    <string name="txt__show_TB">Điểm TB</string>
+
+    <!-- Tìm kiếm    -->
+    <string name="txt__search_hint">Mã SV hoặc họ tên...</string>
+    <string name="btn__search_update">Cập nhật</string>
+    <string name="btn__search_card">THẺ HỌC SINH</string>
+
+    <!--Xuất file    -->
+    <string name="btn_file_title">Lớp</string>
+    <string name="btn_export_file">Xuất file</string>
+
+    <!-- Hỗ trợ kĩ thuật    -->
+    <string name="txt_support_name">Họ và tên*</string>
+    <string name="txt_support_hint_name">Nhập họ tên...</string>
+    <string name="txt_support_position">Chức vụ*</string>
+    <string name="txt_support_hint_position">Chức vụ...</string>
+    <string name="txt_support_require">Yêu cầu*</string>
+    <string name="txt_support_hint_require">Nhập yêu cầu...</string>
+    <string name="txt_support_note">Chúng tôi chỉ xử lý những vấn đề liên quan đến kĩ thuật, lỗi xử lý hay cập nhật. Xin cảm ơn.</string>
+    <string name="btn_support_send">Gửi yêu cầu</string>
+
+    <!--Setting    -->
+    <string name="btn_setting_pw">Đổi mật khẩu</string>
+    <string name="btn_setting_avatar">Thay ảnh đại diện</string>
+    <string name="btn_setting_dark">Chế độ tối</string>
+    <string name="btn_setting_in4">Thay đổi thông tin</string>
+    <string name="btn_setting_language">Ngôn ngữ</string>
+    <string name="btn_setting_logout">Thoát tài khoản</string>
+
+    <!-- chức năng tìm kiếm    -->
+    <string name="btn_dialog_search_math">Toán</string>
+    <string name="btn_dialog_search_literature">Ngữ Văn</string>
+    <string name="btn_dialog_search_foreign_language">Ngoại Ngữ</string>
+    <string name="btn_dialog_search_exit">Thoát</string>
+    <string name="btn_dialog_search_update">Cập nhật</string>
+    <string name="txt_search_title">Học sinh không tồn tại</string>
+    <string name="toast_search_rule_score">Điểm số theo thang điểm 10</string>
+
+
+
+    <!-- Lịch trình-->
+    <string name="txt_schedule_title">Không có dữ liệu</string>
+
+    <!--Setting - function - đổi mật khẩu  -->
+    <string name="txt_hint_old_pw">Nhập mật khẩu cũ...</string>
+    <string name="txt_hint_new_pw">Nhập mật khẩu mới...</string>
+    <string name="txt_hint_again_new_pw">Nhập lại mật khẩu mới...</string>
+
+    <!-- Setting - change language function    -->
+    <string name="txt_show_change_language">Tiếng Việt</string>
+
+    <!--Setting - logout    -->
+    <string name="txt_show_notification">Thông báo</string>
+    <string name="txt_show_option">Bạn chắc chắn muốn thoát?</string>
+    <string name="txt_show_exit">Thoát</string>
+    <string name="txt_show_continue">Tiếp tục</string>
+
+    <!--Change information user -->
+    <string name="txt_change_in4_user_title3">Thay đổi thông tin</string>
+    <string name="txt_change_in4_user_title1">Thông tin cá nhân</string>
+    <string name="txt_change_in4_user_email">Email</string>
+    <string name="txt_change_in4_user_phone_number">Số điện thoại</string>
+    <string name="txt_change_in4_user_address">Địa chỉ</string>
+    <string name="txt_change_in4_user_permanent_address">Địa chỉ TT</string>
+    <string name="txt_change_in4_user_title2">Thông tin cập nhật</string>
+
+    <string name="txt_change_in4_title_email">Email</string>
+    <string name="txt_change_in4_title_phone_number">Số Điện Thoại</string>
+    <string name="txt_change_in4_title_address">Địa Chỉ</string>
+    <string name="txt_change_in4_title_permanent_address">Địa Chỉ TT</string>
+
+    <!--Account   -->
+    <string name="txt_account">Thông tin liên hệ</string>
+    <string name="txt_position">Chức vụ</string>
+
+    <!--Thông báo    -->
+    <string name="txt_notification">Thông báo</string>
+    <string name="edt_enter_in4">Nhập thông tin...</string>
+    <string name="btn_enter_in4">Hoàn thành</string>
+
+    <!-- Toast thông báo login-->
+    <string name="txt_login_toast_email">Cảnh báo 😝😝😝</string>
+    <string name="txt_login_toast_email_message1">Email không đúng định dạng!</string>
+    <string name="txt_login_toast_email_message2">Hãy nhập đầy đủ thông tin!</string>
+    <string name="txt_login_toast_email_success">Thành công 😍😍😍</string>
+    <string name="txt_login_toast_email_success_message">Đã gửi email thành công!</string>
+    <string name="txt_login_toast_email_success_message1">Đăng nhập thành công!</string>
+    <string name="txt_login_toast_email_fail">Lỗi đăng nhập 😭😭😭</string>
+    <string name="txt_login_toast_email_noti">Tài khoản hoặc mật khẩu sai 😭😭😭</string>
+    <string name="txt_login_toast_pw">Không gửi được email 😭😭😭</string>
+
+
+    <!--Toast main   -->
+    <string name="txt_main_fail">Lỗi dữ liệu</string>
+    <string name="txt_main_fail_message">Quá trình tải thất bại 😭😭😭</string>
+
+    <!--Toast support    -->
+    <string name="toast_noti_enter_title">Thông báo</string>
+    <string name="toast_noti_enter_message">Hãy điền đầy đủ thông tin 😫😫😫</string>
+    <string name="toast_noti_send_message_success">Bạn đã gửi yêu cầu thành công 😫😫😫</string>
+    <string name="toast_noti_send_message_fail">Bạn gửi yêu cầu không thành công 😫😫😫</string>
+    <string name="toast_noti_request">Bạn từ chối quyền gửi tin nhắn 😫😫😫</string>
+
+    <!-- Account toast-->
+    <string name="toast_account_message">Lỗi dữ liệu 😭😭😭</string>
+
+    <!-- Toast update success    -->
+    <string name="toast_search_update_success">Cập nhật thành công 😜😜😜</string>
+
+    <!--Toast export file successfully    -->
+    <string name="toast_export_file_message_successfully">Tải xuống thành công 😍😍😍</string>
+    <string name="toast_export_file_message_failed">Tải xuống thât bại 🤪🤪🤪</string>
+
+    <!-- Toast change information    -->
+    <string name="toast_change_in4_update_failed">Cập nhật thất bại 😭😭😭</string>
+
+    <!--Toast setting logout    -->
+    <string name="toast_setting_logout_success">Thoát tài khoản thành công 😝😝😝</string>
+    <string name="toast_change_pw_new">Chưa đồng bộ mật khẩu mới 😭😭😭</string>
+    <string name="toast_change_pw_new_success">Đổi mật khẩu thành công 😍😍😍</string>
+    <string name="toast_change_pw_new_failed">Đổi mật khẩu thất bại 😭😭😭</string>
+    <string name="toast_change_pw_old">Mật khẩu cũ chưa chính xác 😭😭😭</string>
+    <string name="toast_change_avatar_success">Thay đổi ảnh đại diện thành công 😄😄😄</string>
+    <string name="toast_request">Yêu cầu bị từ chối 😭😭😭</string>
+    <string name="toast_change_avatar"> Hãy chọn hình ảnh 😄😄😄</string>
+    <string name="toast_change_pw_length">Độ dài mật khẩu phải lớn hơn 8 kí tự 😭😭😭</string>
+    <string name="toast_change_pw_special_char">Mật khẩu phải chứa ít nhất 1 kí tự đặc biệt 😭😭😭</string>
+    <string name="toast_change_pw_uppercase_character">Mật khẩu phải chứa ít nhất 1 kí tự in hoa 😝😝😝</string>
+    <string name="toast_change_pw_number_character">Mật khẩu phải chứa chữ số 😝😝😝</string>
+    <string name="toast_change_in4_phone_number">Số điện thoại 10 kí tự chữ số 😝😝😝</string>
+
+
+
+</resources>

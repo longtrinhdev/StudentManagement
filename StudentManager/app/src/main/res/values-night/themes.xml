@@ -1,0 +1,49 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.StudentManager" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your dark theme here. -->
+        <!-- <item name="colorPrimary">@color/my_dark_primary</item> -->
+    </style>
+
+    <!--Splash Activity    -->
+    <style name="bg_text_splash_activity">
+        <item name="android:textColor">@color/violet</item>
+    </style>
+    
+    <!--Login Activity    -->
+    <style name="bg_boy_read_book">
+        <item name="android:src">@drawable/boy</item>
+        <item name="android:tint">#959595</item>
+        <item name="elevation">1dp</item>
+    </style>
+
+    <style name="bg_books">
+        <item name="android:src">@drawable/books</item>
+        <item name="android:tint">#434242</item>
+        <item name="elevation">1dp</item>
+    </style>
+
+    <style name="bg_base">
+        <item name="android:src">@drawable/tham</item>
+        <item name="android:tint">#434242</item>
+        <item name="elevation">1dp</item>
+    </style>
+
+    <!--Notifications    -->
+    <style name="bg_img_back">
+        <item name="android:src">@drawable/back</item>
+        <item name="tint">@color/grey</item>
+    </style>
+
+    <!-- Schedule Activity    -->
+    <style name="text_color_day">
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <!--layout change avatar     -->
+    <style name="img_color_back">
+        <item name="android:src">@drawable/close</item>
+        <item name="android:tint">#fff</item>
+    </style>
+
+</resources>

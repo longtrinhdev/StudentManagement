@@ -1,0 +1,355 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeStatus.ShowInformationActivity">
+
+
+    <LinearLayout
+        android:id="@+id/lt_show_infor_user"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/img_back"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            style="@style/bg_img_back"
+            app:srcCompat="@drawable/back" />
+
+        <TextView
+            android:id="@+id/txt_title_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="24sp"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:text="Nguyễn Văn A" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lt_show_infor_student1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/lt_show_infor_user"
+        app:layout_constraintStart_toStartOf="@id/lt_show_infor_user"
+        app:layout_constraintEnd_toEndOf="@id/lt_show_infor_user"
+        android:layout_marginTop="42dp"
+        android:orientation="vertical">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/img_show_avatar"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:elevation="2dp"
+            android:layout_gravity="center"
+            android:src="@drawable/def"/>
+
+        <TextView
+            android:id="@+id/txt_show_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:layout_marginTop="8dp"
+            android:textAlignment="center"
+            android:text="Nguyễn Văn A" />
+
+        <TextView
+            android:id="@+id/txt_show_student_code"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:textAlignment="center"
+            android:layout_marginTop="4dp"
+            android:text="12345" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:textColor="#ac81e8"
+        app:layout_constraintStart_toStartOf="@id/lt_show_infor_student1"
+        app:layout_constraintTop_toBottomOf="@id/lt_show_infor_student1"
+        app:layout_constraintEnd_toEndOf="@id/lt_show_infor_student1"
+        android:layout_marginTop="24dp"
+        android:text="@string/txt_show_student_title" />
+
+    <LinearLayout
+        android:id="@+id/lt_show_infor_student2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@id/lt_show_infor_student1"
+        app:layout_constraintTop_toBottomOf="@id/textView"
+        app:layout_constraintEnd_toEndOf="@id/lt_show_infor_student1"
+        android:layout_marginEnd="4dp"
+        android:padding="8dp"
+        android:background="@drawable/bg_show_information"
+        android:layout_marginTop="12dp"
+        android:orientation="horizontal">
+
+
+        <ImageView
+            android:id="@+id/imageView15"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:layout_marginTop="8dp"
+            app:srcCompat="@drawable/component" />
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_marginStart="-12dp"
+            android:layout_height="match_parent">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:layout_height="0dp" >
+
+                <TextView
+                    android:id="@+id/txt_born"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:text="@string/txt__show_born" />
+
+                <TextView
+                    android:id="@+id/txt_show_born"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:gravity="end"
+                    android:layout_weight="1"
+                    android:text="15/05/2003" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:layout_marginTop="16dp"
+                android:layout_height="0dp" >
+
+                <TextView
+                    android:id="@+id/txt_sex"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:text="@string/txt__show_sex" />
+
+                <TextView
+                    android:id="@+id/txt_show_sex"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:gravity="end"
+                    android:layout_weight="1"
+                    android:text="Nam" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_marginTop="20dp"
+                android:layout_height="0dp" >
+
+                <TextView
+                    android:id="@+id/txt_address"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:text="@string/txt__show_address" />
+
+                <TextView
+                    android:id="@+id/txt_show_address"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:gravity="end"
+                    android:layout_weight="1"
+                    android:text="Hòa Lộc, Hậu Lộc, Thanh Hóa" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_marginTop="24dp"
+                android:layout_height="0dp" >
+
+                <TextView
+                    android:id="@+id/txt_position"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:text="@string/txt__show_phone_number" />
+
+                <TextView
+                    android:id="@+id/txt_show_phone_number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:gravity="end"
+                    android:layout_weight="1"
+                    android:text="0384824890" />
+
+            </TableRow>
+        </TableLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:textColor="#ac81e8"
+        app:layout_constraintStart_toStartOf="@id/lt_show_infor_student2"
+        app:layout_constraintTop_toBottomOf="@id/lt_show_infor_student2"
+        android:layout_marginTop="32dp"
+        android:text="@string/txt__show_title2" />
+
+    <LinearLayout
+        android:id="@+id/lt_show_infor_student3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@id/lt_show_infor_student2"
+        app:layout_constraintTop_toBottomOf="@id/textView1"
+        app:layout_constraintEnd_toEndOf="@id/lt_show_infor_student2"
+        android:layout_marginEnd="4dp"
+        android:background="@drawable/bg_show_information"
+        android:padding="8dp"
+        android:layout_marginTop="18dp"
+        android:orientation="horizontal">
+
+
+        <ImageView
+            android:id="@+id/imageView16"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:layout_marginTop="8dp"
+            app:srcCompat="@drawable/component" />
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_marginStart="-12dp"
+            android:layout_height="match_parent">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="0dp" >
+
+                <TextView
+                    android:id="@+id/txt_phone_number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:textSize="16sp"
+                    android:text="@string/txt__show_math" />
+
+                <TextView
+                    android:id="@+id/txt_show_math"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:gravity="end"
+                    android:textColor="#0AF357"
+                    android:layout_weight="1"
+                    android:text="9" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+
+                android:layout_marginTop="20dp"
+                android:layout_height="0dp" >
+
+                <TextView
+                    android:id="@+id/txt_email"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:textSize="16sp"
+                    android:text="@string/txt__show_literature" />
+
+                <TextView
+                    android:id="@+id/txt_show_literature"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:textColor="#0AF357"
+                    android:gravity="end"
+                    android:layout_weight="1"
+                    android:text="9" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_marginTop="20dp"
+                android:layout_height="0dp" >
+
+                <TextView
+                    android:id="@+id/txt_permanent_address1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:textSize="16sp"
+                    android:text="@string/txt__show_language" />
+
+                <TextView
+                    android:id="@+id/txt_show_language"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:textColor="#0AF357"
+                    android:gravity="end"
+                    android:layout_weight="1"
+                    android:text="9" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_marginTop="16dp"
+                android:layout_height="0dp" >
+
+                <TextView
+                    android:id="@+id/txt_address1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:textSize="16sp"
+                    android:text="@string/txt__show_TB" />
+
+                <TextView
+                    android:id="@+id/txt_show_score"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:gravity="end"
+                    android:textColor="#0AF357"
+                    android:layout_weight="1"
+                    android:text="9.0" />
+
+            </TableRow>
+        </TableLayout>
+
+    </LinearLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

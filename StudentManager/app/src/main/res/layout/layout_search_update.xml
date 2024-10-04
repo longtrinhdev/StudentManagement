@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="8dp"
+    android:layout_marginStart="16dp"
+    android:layout_marginEnd="16dp"
+    android:elevation="4dp"
+    android:background="@drawable/bg_update_dialog">
+
+    <LinearLayout
+        android:id="@+id/lt_search_progressBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone"
+        android:elevation="2dp"
+        android:padding="10dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/bg_item_schuele"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <TextView
+            android:id="@+id/txt_search_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/darkGrey"
+            android:textSize="28sp"
+            android:text="@string/txt_notification_title"/>
+
+        <com.github.ybq.android.spinkit.SpinKitView
+            android:id="@+id/search_progressBar"
+            android:layout_width="72dp"
+            android:layout_height="72dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="24dp"
+            android:layout_gravity="center"
+            app:SpinKit_Color="@color/darkGrey"/>
+
+    </LinearLayout>
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/img_update_avatar"
+        android:layout_width="78dp"
+        android:layout_height="78dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txt_update_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="21sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_marginTop="6dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/img_update_avatar"
+        android:text="Nguyễn Văn A" />
+
+    <TextView
+        android:id="@+id/txt_update_stu_code"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:gravity="center"
+        android:layout_marginTop="4dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txt_update_name"
+        android:text="12345" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="4dp"
+        android:background="#ac81e8"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txt_update_stu_code"/>
+
+    <TableLayout
+        android:id="@+id/tl_update_score_student"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="24dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txt_update_stu_code">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:alpha="0.75">
+
+            <TextView
+                android:id="@+id/txt_update_math"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:textStyle="bold"
+                android:text="@string/btn_dialog_search_math" />
+
+            <TextView
+                android:id="@+id/txt_update_literature"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:text="@string/btn_dialog_search_literature" />
+
+            <TextView
+                android:id="@+id/txt_update_language"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:gravity="center"
+                android:text="@string/btn_dialog_search_foreign_language" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="4dp"
+            android:layout_marginEnd="4dp"
+            android:layout_marginTop="8dp">
+
+            <EditText
+                android:id="@+id/edt_update_math"
+                android:layout_width="wrap_content"
+                android:layout_height="32dp"
+                android:layout_weight="1"
+                android:ems="10"
+                android:layout_marginEnd="6dp"
+                android:textAlignment="center"
+                android:textSize="16sp"
+                android:textColor="#18CA3D"
+                android:background="@drawable/bg_update_edt"
+                android:inputType="numberDecimal" />
+
+            <EditText
+                android:id="@+id/edt_update_literature"
+                android:layout_width="wrap_content"
+                android:layout_height="32dp"
+                android:ems="10"
+                android:layout_weight="1"
+                android:layout_marginStart="6dp"
+                android:layout_marginEnd="6dp"
+                android:textAlignment="center"
+                android:textColor="#18CA3D"
+                android:background="@drawable/bg_update_edt"
+                android:textSize="16sp"
+                android:inputType="numberDecimal" />
+            <EditText
+                android:id="@+id/edt_update_language"
+                android:layout_width="wrap_content"
+                android:layout_height="32dp"
+                android:layout_weight="1"
+                android:layout_marginStart="6dp"
+                android:background="@drawable/bg_update_edt"
+                android:ems="10"
+                android:textSize="16sp"
+                android:textAlignment="center"
+                android:textColor="#18CA3D"
+                android:inputType="numberDecimal" />
+        </TableRow>
+
+    </TableLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="32dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tl_update_score_student"
+        android:orientation="horizontal">
+
+
+        <Button
+            android:id="@+id/btn_update_exit"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:background="@drawable/ng_search_btn"
+            app:backgroundTint = "@null"
+            android:layout_marginEnd="16dp"
+            android:layout_weight="1"
+            android:text="@string/btn_dialog_search_exit" />
+
+        <Button
+            android:id="@+id/btn_update_continue"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:background="@drawable/ng_search_btn"
+            android:layout_weight="1"
+            android:layout_marginStart="16dp"
+            app:backgroundTint = "@null"
+            android:text="@string/btn_dialog_search_update" />
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+

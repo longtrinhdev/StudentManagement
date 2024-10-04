@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Student Management</string>
+    <!--  splash activity  -->
+    <string name="txt_splash">Student Management</string>
+    <!--  login  -->
+    <string name="btn_login">Login</string>
+    <string name="txt_forgot">Forgot Password ?</string>
+    <!-- Thông báo-->
+    <string name="txt_notification_title">Loading...</string>
+
+    <!--  Home  -->
+    <string name="txt_notification_main">Recent Notifications</string>
+    <string name="txt_tien_ich">Features</string>
+    <string name="txt_danh_sach_hien_thi">List Students</string>
+    <string name="txt_tim_kiem">Search</string>
+    <string name="txt_xuat_file">Export File</string>
+    <string name="txt_xuat_ho_tro">Technical Support</string>
+    <string name="nav_home">Home</string>
+    <string name="nav_schedule">Schedule</string>
+    <string name="nav_setting">Setting</string>
+    <string name="nav_account">Account</string>
+
+    <!-- Hiển thị danh sách sinh viên   -->
+    <string name="txt_show_list_title">Class Lists</string>
+    <string name="txt_increase_list">Ascending order</string>
+    <string name="txt_decrease">Descending order</string>
+    <string name="txt_show_student_title">Personal Information</string>
+    <string name="txt__show_born">Date of Birth</string>
+    <string name="txt__show_sex">Gender</string>
+    <string name="txt__show_address">Address</string>
+    <string name="txt__show_phone_number">Phone number</string>
+    <string name="txt__show_title2">Learning outcomes</string>
+    <string name="txt__show_math">Math Score</string>
+    <string name="txt__show_literature">Literature Score</string>
+    <string name="txt__show_language">English Score</string>
+    <string name="txt__show_TB">Average Score </string>
+
+    <!-- Tìm kiếm    -->
+    <string name="txt__search_hint">Student code or name</string>
+    <string name="btn__search_update">Update</string>
+    <string name="btn__search_card">STUDENT CARD</string>
+
+    <!--Xuất file    -->
+    <string name="btn_file_title">Class</string>
+    <string name="btn_export_file">Export File</string>
+
+    <!-- Hỗ trợ kĩ thuật    -->
+    <string name="txt_support_name">Full name*</string>
+    <string name="txt_support_hint_name">Enter full name...</string>
+    <string name="txt_support_position">Position*</string>
+    <string name="txt_support_hint_position">Enter position...</string>
+    <string name="txt_support_require">Message*</string>
+    <string name="txt_support_hint_require">Enter message...</string>
+    <string name="txt_support_note">We only handle technical issues, processing errors or updates. Thank you.</string>
+    <string name="btn_support_send">Send message</string>
+
+    <!--Setting    -->
+    <string name="btn_setting_pw">Change password</string>
+    <string name="btn_setting_avatar">Change profile picture</string>
+    <string name="btn_setting_dark">Dark mode</string>
+    <string name="btn_setting_in4">Change information</string>
+    <string name="btn_setting_language">Change language</string>
+    <string name="btn_setting_logout">Log out</string>
+
+    <!-- chức năng tìm kiếm    -->
+    <string name="btn_dialog_search_math">Math</string>
+    <string name="btn_dialog_search_literature">Literature</string>
+    <string name="btn_dialog_search_foreign_language">English</string>
+    <string name="btn_dialog_search_exit">Exit</string>
+    <string name="btn_dialog_search_update">Update</string>
+    <string name="txt_search_title">Student does not exist</string>
+    <string name="toast_search_rule_score">Score on a scale of 10</string>
+
+
+
+    <!-- Lịch trình-->
+    <string name="txt_schedule_title">No data available</string>
+
+    <!--Setting - function - đổi mật khẩu  -->
+    <string name="txt_hint_old_pw">Enter old password...</string>
+    <string name="txt_hint_new_pw">Enter new password...</string>
+    <string name="txt_hint_again_new_pw">Re-enter new password...</string>
+
+    <!-- Setting - change language function    -->
+    <string name="txt_show_change_language">English</string>
+
+    <!--Setting - logout    -->
+    <string name="txt_show_notification">Notification</string>
+    <string name="txt_show_option">Are you sure you want to exit?</string>
+    <string name="txt_show_exit">Exit</string>
+    <string name="txt_show_continue">Continue</string>
+
+    <!--Change information user -->
+    <string name="txt_change_in4_user_title3">Change information</string>
+    <string name="txt_change_in4_user_title1">Personal information</string>
+    <string name="txt_change_in4_user_email">Email</string>
+    <string name="txt_change_in4_user_phone_number">Phone number</string>
+    <string name="txt_change_in4_user_address">Address</string>
+    <string name="txt_change_in4_user_permanent_address">Permanent Address</string>
+    <string name="txt_change_in4_user_title2">Information after update</string>
+
+    <string name="txt_change_in4_title_email">Email</string>
+    <string name="txt_change_in4_title_phone_number">Phone number</string>
+    <string name="txt_change_in4_title_address">Address</string>
+    <string name="txt_change_in4_title_permanent_address">Permanent Address</string>
+
+    <!--Account   -->
+    <string name="txt_account">Contact information</string>
+    <string name="txt_position">Position</string>
+
+    <!--Thông báo    -->
+    <string name="txt_notification">Notifications</string>
+    <string name="edt_enter_in4">Enter information...</string>
+    <string name="btn_enter_in4">Complete</string>
+
+
+
+    <!-- Toast thông báo login-->
+    <string name="txt_login_toast_email">Warning 😝😝😝</string>
+    <string name="txt_login_toast_email_message1">Email is not in correct format!</string>
+    <string name="txt_login_toast_email_message2">Please fill in all information!</string>
+    <string name="txt_login_toast_email_success">Success 😍😍😍</string>
+    <string name="txt_login_toast_email_success_message">Email sent successfully!</string>
+    <string name="txt_login_toast_email_success_message1">Login successful!</string>
+    <string name="txt_login_toast_email_fail">Login error 😭😭😭</string>
+    <string name="txt_login_toast_email_noti">Account or Password is wrong 😭😭😭</string>
+    <string name="txt_login_toast_pw">Do not send email 😭😭😭</string>
+
+    <!--Toast main   -->
+    <string name="txt_main_fail">Data error</string>
+    <string name="txt_main_fail_message">Download failed 😭😭😭</string>
+
+    <!--Toast support    -->
+    <string name="toast_noti_enter_title">Notification</string>
+    <string name="toast_noti_enter_message">Please fill in the information completely 😫😫😫</string>
+    <string name="toast_noti_send_message_success">Your request has been submitted successfully 😫😫😫</string>
+    <string name="toast_noti_send_message_fail">Your request was unsuccessful 😫😫😫</string>
+    <string name="toast_noti_request">You deny permission to send messages 😫😫😫</string>
+
+    <!-- Account toast-->
+    <string name="toast_account_message">Data error 😭😭😭</string>
+
+    <!-- Toast update success    -->
+    <string name="toast_search_update_success">Update successfully 😜😜😜</string>
+
+    <!--Toast export file successfully    -->
+    <string name="toast_export_file_message_successfully">Download successfully 😍😍😍</string>
+    <string name="toast_export_file_message_failed">Download failed 🤪🤪🤪</string>
+
+    <!-- Toast change information    -->
+    <string name="toast_change_in4_update_failed">Update failed 😭😭😭</string>
+
+    <!--Toast setting logout    -->
+    <string name="toast_setting_logout_success">Account logged out successfully 😝😝😝</string>
+    <string name="toast_change_pw_new">New password not synced yet 😭😭😭</string>
+    <string name="toast_change_pw_new_success">Change password successfully 😍😍😍</string>
+    <string name="toast_change_pw_new_failed">Change password failed 😭😭😭</string>
+    <string name="toast_change_pw_old">Old password is incorrect 😭😭😭</string>
+    <string name="toast_change_avatar_success">Changed profile picture successfully 😄😄😄</string>
+    <string name="toast_request">Request denied 😭😭😭</string>
+    <string name="toast_change_pw_length">Password length must be greater than 8 characters 😭😭😭</string>
+    <string name="toast_change_avatar"> Please to select image 😄😄😄</string>
+    <string name="toast_change_pw_special_char">Password has must one a special character 😭😭😭</string>
+    <string name="toast_change_pw_uppercase_character">Password has contained a uppercase character 😝😝😝</string>
+    <string name="toast_change_pw_number_character">Password has contained a number character 😝😝😝</string>
+    <string name="toast_change_in4_phone_number">Phone number has 10 character 😝😝😝</string>
+
+
+
+
+</resources>

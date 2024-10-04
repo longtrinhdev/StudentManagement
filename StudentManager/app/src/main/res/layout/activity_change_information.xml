@@ -1,0 +1,376 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Setting.ChangeInformationActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/lt_progress_bar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:visibility="gone"
+        android:background="#CDCDCD"
+        android:elevation="-1dp"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <com.github.ybq.android.spinkit.SpinKitView
+            android:id="@+id/progress_bar"
+            android:layout_width="64dp"
+            android:layout_marginTop="24dp"
+            android:layout_height="64dp"
+            app:SpinKit_Color="@color/black"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <LinearLayout
+        android:id="@+id/layout_student_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:elevation="1dp"
+        android:layout_marginStart="16sp"
+        android:layout_marginTop="18dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/img_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/bg_img_back"/>
+
+        <TextView
+            android:id="@+id/txt_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="24sp"
+            android:layout_weight="2"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            android:layout_marginEnd="24dp"
+            android:text="@string/txt_change_in4_user_title3" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lt_st_change_in4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/layout_student_list"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="32dp"
+        android:orientation="vertical">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/img_st_change_in4_avatar"
+            android:layout_width="96dp"
+            android:layout_height="96dp"
+            android:elevation="2dp"
+            android:layout_gravity="center"
+            android:src="@drawable/avatar"/>
+
+        <TextView
+            android:id="@+id/txt_st_change_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="24sp"
+            android:layout_marginTop="12dp"
+            android:gravity="center"
+            android:text="Trịnh Hoàng Long"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/txt_st_change_code"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:layout_marginTop="4dp"
+            android:alpha="0.7"
+            android:gravity="center"
+            android:text="2021989"
+            android:textStyle="bold"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:textColor="#ac81e8"
+        android:layout_marginStart="16dp"
+        app:layout_constraintStart_toStartOf="@id/lt_st_change_in4"
+        app:layout_constraintTop_toBottomOf="@id/lt_st_change_in4"
+        android:layout_marginTop="32dp"
+        android:text="@string/txt_change_in4_user_title1" />
+
+    <LinearLayout
+        android:id="@+id/lt_show_infor_student2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@id/textView"
+        app:layout_constraintTop_toBottomOf="@id/textView"
+        app:layout_constraintEnd_toEndOf="@id/lt_st_change_in4"
+        android:background="@drawable/bg_show_information"
+        android:padding="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="12dp"
+        android:orientation="horizontal">
+
+
+        <ImageView
+            android:id="@+id/imageView15"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:layout_marginTop="8dp"
+            app:srcCompat="@drawable/component" />
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_marginStart="-12dp"
+            android:layout_height="match_parent">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:layout_height="0dp" >
+
+                <TextView
+                    android:id="@+id/txt_mail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:text="@string/txt_change_in4_user_email" />
+
+                <TextView
+                    android:id="@+id/txt_show_mail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:gravity="end"
+                    android:layout_weight="1"
+                    android:text="dramosi.it.1523@gmail.com" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:layout_marginTop="16dp"
+                android:layout_height="0dp" >
+
+                <TextView
+                    android:id="@+id/txt_position"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:text="@string/txt_change_in4_user_phone_number" />
+
+                <TextView
+                    android:id="@+id/txt_show_position"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:gravity="end"
+                    android:layout_weight="1"
+                    android:text="034824890" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_marginTop="20dp"
+                android:layout_height="0dp" >
+
+                <TextView
+                    android:id="@+id/txt_address"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:text="@string/txt_change_in4_user_address" />
+
+                <TextView
+                    android:id="@+id/txt_show_address"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:gravity="end"
+                    android:layout_weight="1"
+                    android:text="Hòa Lộc, Hậu Lộc, Thanh Hóa" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_marginTop="24dp"
+                android:layout_height="0dp" >
+
+                <TextView
+                    android:id="@+id/txt_permanent_address"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:text="@string/txt_change_in4_user_permanent_address" />
+
+                <TextView
+                    android:id="@+id/txt_show_permanent_address"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:gravity="end"
+                    android:layout_weight="1"
+                    android:text="Lĩnh Nam, Hoàng Mai, Hà Nội" />
+
+            </TableRow>
+        </TableLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:textColor="#ac81e8"
+        app:layout_constraintStart_toStartOf="@id/lt_show_infor_student2"
+        app:layout_constraintTop_toBottomOf="@id/lt_show_infor_student2"
+        android:layout_marginTop="32dp"
+        android:text="@string/txt_change_in4_user_title2" />
+
+    <LinearLayout
+        android:id="@+id/lt_show_infor_student3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@id/textView1"
+        app:layout_constraintTop_toBottomOf="@id/textView1"
+        app:layout_constraintEnd_toEndOf="@id/lt_show_infor_student2"
+        android:background="@drawable/bg_show_information"
+        android:padding="8dp"
+        android:layout_marginTop="12dp"
+        android:orientation="horizontal">
+
+
+        <ImageView
+            android:id="@+id/imageView16"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:layout_marginTop="8dp"
+            app:srcCompat="@drawable/component" />
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_marginStart="-12dp"
+            android:layout_height="match_parent">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:layout_height="0dp" >
+
+                <TextView
+                    android:id="@+id/txt_mail_new"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:text="@string/txt_change_in4_title_email" />
+
+                <TextView
+                    android:id="@+id/txt_show_mail_new"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:gravity="end"
+                    android:layout_weight="1"
+                    android:text="dramosi.it.1523@gmail.com" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:layout_marginTop="16dp"
+                android:layout_height="0dp" >
+
+                <TextView
+                    android:id="@+id/txt_phone_number_new"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:text="@string/txt_change_in4_title_phone_number" />
+
+                <TextView
+                    android:id="@+id/txt_show_phone_number_new"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:gravity="end"
+                    android:layout_weight="1"
+                    android:text="034824890" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_marginTop="20dp"
+                android:layout_height="0dp" >
+
+                <TextView
+                    android:id="@+id/txt_address_new"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:text="@string/txt_change_in4_title_address" />
+
+                <TextView
+                    android:id="@+id/txt_show_address_new"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:gravity="end"
+                    android:layout_weight="1"
+                    android:text="Hòa Lộc, Hậu Lộc, Thanh Hóa" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_marginTop="24dp"
+                android:layout_height="0dp" >
+
+                <TextView
+                    android:id="@+id/txt_permanent_address_new"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:text="@string/txt_change_in4_title_permanent_address" />
+
+                <TextView
+                    android:id="@+id/txt_show_permanent_address_new"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:gravity="end"
+                    android:layout_weight="1"
+                    android:text="Lĩnh Nam, Hoàng Mai, Hà Nội" />
+
+            </TableRow>
+        </TableLayout>
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

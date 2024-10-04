@@ -1,0 +1,26 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.StudentManager" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+    </style>
+
+    <style name="Theme.StudentManager" parent="Base.Theme.StudentManager" />
+
+    <!--Notifications    -->
+    <style name="bg_img_back">
+        <item name="android:src">@drawable/back</item>
+    </style>
+
+    <!-- Schedule Activity    -->
+    <style name="text_color_day">
+        <item name="android:textColor">@color/dark_bg_color</item>
+    </style>
+
+    <!--layout change avatar     -->
+    <style name="img_color_back">
+        <item name="android:src">@drawable/close</item>
+    </style>
+
+
+</resources>
